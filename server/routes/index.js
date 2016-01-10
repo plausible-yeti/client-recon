@@ -25,6 +25,9 @@ module.exports = function(app, express) {
 	app.put('/api/users/:user_id/clients', function(req,res){
 		controller.client.put(req,res);
 	})
-	
+	// ROUTE FOR GETTING FEED FOR A PARTICULAR CLIENT
+	app.get('/api/users/:user_id/clients/:client_id/feed', function(req,res){
+		controller.feed.get(req,res);
+	})
 }
 

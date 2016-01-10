@@ -29,12 +29,16 @@
   "dependencies": {
     "body-parser": "^1.14.2",
     "express": "^4.13.3",
+    "jquery": "^2.2.0",
     "jwt-simple": "^0.4.0",
     "lodash": "^3.10.1",
+    "node-bing-api": "^2.3.0",
     "path": "^0.12.7",
     "pg-promise": "^2.8.5",
     "sql-load": "0.0.2",
-    "url": "^0.11.0"
+    "sugar": "^1.4.1",
+    "url": "^0.11.0",
+    "weather": "^0.1.0"
   },
   "devDependencies": {
     "chai": "^3.4.1",
