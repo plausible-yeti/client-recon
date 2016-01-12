@@ -1,93 +1,60 @@
-[![Floobits Status](https://floobits.com/urbantumbleweed/client-recon.svg)](https://floobits.com/urbantumbleweed/client-recon/redirect)
+# Project Name: Rappo.rt
 
-# client-recon
-Sales and account management relationship augmentation engine
+> Let Rappo.rt help you build meaninful relationships with your clients by keeping you up to date on news and events that your clients are interested in. Rappo.rt doubles as a one stop shop for content curated based on your clients interests, as well as a personal assistent that will push messages to you as events important to your client approach. 
 
-# user-stories
+## Team
 
-As an ______, I want to _____, so that I can ________.
+  - __Product Owner__: Rebecca Yang
+  - __Scrum Master__: Stephen Saunders
+  - __Development Team Members__: Alan Fu, Shafique Rashid
 
-As an account manager, I want a repository of customer info so I have it in one place.
-As an account manager, I want a reminder when it's my client's birthday so I can develop the replationship
-As an account manager, I want the latest news about
-my customer's company, so I am up to date
+## Table of Contents
 
+1. [Usage](#Usage)
+1. [Requirements](#requirements)
+1. [Development](#development)
+    1. [Installing Dependencies](#installing-dependencies)
+    1. [Tasks](#tasks)
+1. [Team](#team)
+1. [Contributing](#contributing)
 
-----------------
- 1. User loads dashboard
- 2. 
- 
+## Usage
 
-Front-end:
+> Some usage instructions
 
+Navigate to http://friend-ly.herokuapp.com/ to see a summary dashboard containing all of your clients!
 
-Login:
-Web token
+Click on any client to drill down on the Client's information. You will see bio data as well as curated content based on the Client's interests. 
 
+If you are not seeing a client that you would expect to see on the dashboard, you can click on the '+' sign at the bottom and fill out the subsequent form.
 
-Database:
+Moving forward you will recieve text notifications as events important to your client approach, such as birthdays or gameday for their favorite team.
 
-3rd PartyAPI:
-Server-side calls
-
-Server API Endpoints:
-
-/database
-  db.js
-    - create schema
-      - user
-        -name, user, id
-      - user cli
-      - client
-  model.js
-    - db query methods
----------------------------------------------------
-/server
-  -server.js 
-    - middleware
-    - where server starts/listen
-    - omg don't forget body parser json()
-    -app.use express static
-
-  -routing
-    -authentication?
-    -api routes, which reference handlers
-      app.use('/api/user/client', handler.clientHandler)
-  -handler/controller
-    -req,res handling
-      -call model.js methods to interact with database
-      -helper/api
-  -helpers
-    -promisify library
-  -keys/api methods
-    -external api keys and methods
----------------------------------------------------
-  /public or client
-    -styles
-    -assets
-    -index.html
-      -nav-bar
-      -ng-view container
-    -app.js
-      -routing - authentication
-        -refers to app folder app.dashboardcontroller, app.clientcontroller,etc.
-
-    /app
-      -services
-        -shared state (variable that holds data)
-        -shared factories/services
-      /dashboard
-        -controller
-        -html
-      /client
-        -controller
-        -html
-      /createnewclient
-        -controller
-        -html
-    
-    
+Let Rappo.rt help you build a fruitful relationship with all your clients!
 
 
+## Requirements
+
+- Node 0.10.x
+- Express 4.x
+- Postgresql 9.1.x
+- Angular 1.x
+
+## Development
+
+### Installing Dependencies
+
+From within the root directory:
+
+```sh
+npm install
+```
+
+### Roadmap
+
+View the project roadmap [here](/issues)
 
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
